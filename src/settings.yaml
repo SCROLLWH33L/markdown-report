@@ -1,0 +1,18 @@
+# CLI Arguments here (Putting variables here will cause an error)
+input-files:
+  - 0-variables.yaml
+  - 1-introduction.md
+  - 2-summary.md
+  - 3-methodologies.md
+  - 4-independent-challenges.md
+  - 5-active-directory.md
+log-file: pandoc.log
+resource-path:
+  - '.'
+  - images
+include-in-header: src/preamble.sty
+filters:
+  - filters/colors.lua
+listings: true
+from: markdown
+template: templates/template.tex
